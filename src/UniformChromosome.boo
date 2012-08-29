@@ -74,7 +74,7 @@ class UniformChromosome(Chromosome[of single]):
         output as string = "|"
 
         for data in Data:
-            output += data.ToString() + "|"
+            output += String.Format("  {0, -11} |", data.ToString())
 
         return output
 

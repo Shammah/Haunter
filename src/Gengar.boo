@@ -22,7 +22,7 @@ class Gengar:
 		ucr as UniformChromosome = cr cast UniformChromosome
 
 		_haunter.Settings.CrossoverProbability 	= ucr.Data[0] * 100 # Percentage [0, 100]
-		_haunter.Settings.MutationProbability 	= ucr.Data[1] * 100 # Percentage [0, 100]
+		_haunter.Settings.MutationProbability 	= ucr.Data[1] * 10 # Percentage [0, 100]
 		_haunter.Settings.NumberOfElites 		= ucr.Data[2] * 10  # A percentage of the population
 		_haunter.Settings.Population 			= ucr.Data[2] * 100 # Population between [0, 100]
 		_haunter.Settings.Generations 			= ucr.Data[3] * 100 # Number of generations [0, 100]
@@ -36,7 +36,7 @@ class Gengar:
 		settings.Population = 20
 		settings.Generations = 30
 		settings.NumberOfElites = 3
-		settings.MutationProbability = 80
+		settings.MutationProbability = 50
 		settings.CrossoverProbability = 70
 		settings.ChromosomeLength = 4
 		settings.ChromosomeType = typeof(UniformChromosome)
